@@ -13,7 +13,7 @@ export const getAllMedicos = async (req, res) => {
     }
 }
 //Mostrar un registro
-export const getmedico = async (req, res) => {
+export const getMedico = async (req, res) => {
         try {
             const medico = await MedicoModel.findAll({
                 where:{ id:req.params.id }

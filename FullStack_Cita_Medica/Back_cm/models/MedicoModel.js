@@ -3,9 +3,9 @@ import db from "../database/db.js";
 //importamos sequelize
 import { DataTypes } from "sequelize";
 
- const BlogModel = db.define('medicos', {
+ const MedicoModel = db.define('medicos', {
      Especialida: { type: DataTypes.STRING },
      Medico: { type: DataTypes.STRING },
  })
 
- export default BlogModel
+ export default MedicoModel
