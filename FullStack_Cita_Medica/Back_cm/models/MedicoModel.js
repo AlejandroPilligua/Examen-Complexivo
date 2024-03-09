@@ -3,7 +3,7 @@ import db from "../database/db.js";
 //importamos sequelize
 import { DataTypes } from "sequelize";
 
- const BlogModel = db.define('medico', {
+ const BlogModel = db.define('medicos', {
      Especialida: { type: DataTypes.STRING },
      Medico: { type: DataTypes.STRING },
  })

@@ -24,7 +24,7 @@ export const getmedico = async (req, res) => {
         }
 }
 //Crear un registro
-export const createBlog = async (req, res) => {
+export const createMedico = async (req, res) => {
     try {
        await MedicoModel.create(req.body)
        res.json({
