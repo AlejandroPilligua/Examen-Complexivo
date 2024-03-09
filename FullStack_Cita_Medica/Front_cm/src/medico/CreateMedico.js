@@ -21,19 +21,19 @@ const CompCreateMedico = () => {
            <h3>Create POST</h3>
            <form onSubmit={store}>
                 <div className='mb-3'>
-                    <label className='form-label'>Title</label>
+                    <label className='form-label'>Especialidad</label>
                     <input
-                        value={title}
-                        onChange={ (e)=> setTitle(e.target.value)} 
+                        value={Especialidad}
+                        onChange={ (e)=> setEspecialidad(e.target.value)} 
                         type="text"
                         className='form-control'
                     />
                  </div>   
                  <div className='mb-3'>
-                     <label className='form-label'>Title</label>
+                     <label className='form-label'>Medico</label>
                     <textarea
-                        value={content}
-                        onChange={ (e)=> setContent(e.target.value)} 
+                        value={Medico}
+                        onChange={ (e)=> setMedico(e.target.value)} 
                         type="text"
                         className='form-control'
                     />                 

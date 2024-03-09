@@ -38,12 +38,12 @@ const CompShowMedicos = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            { medico.map ( (medico) => (
+                            { medicos.map ( (medico) => (
                                 <tr key={ medico.id}>
                                     <td> { medico.Especialidad } </td>
-                                    <td> { medico.medico } </td>
+                                    <td> { medico.Medico } </td>
                                     <td>
-                                        <Link to={`/edit/${blog.id}`} className='btn btn-info'><i className="fas fa-edit"></i></Link>
+                                        <Link to={`/edit/${medico.id}`} className='btn btn-info'><i className="fas fa-edit"></i></Link>
                                         <button onClick={ ()=>deleteMedico(medico.id) } className='btn btn-danger'><i className="fas fa-trash-alt"></i></button>
                                     </td>
                                 </tr>
